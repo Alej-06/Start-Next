@@ -1,3 +1,6 @@
+# Start-next
+
+Este proyecto es mi primera prueba de Next en clase de Ico
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
