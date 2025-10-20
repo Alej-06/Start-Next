@@ -19,8 +19,14 @@ export default function TabExampleSection(){
             <TabButton isSelected={selected == 'props'} onClick={() => handleClick("props")}>{EXAMPLES.props.title}</TabButton>
             <TabButton isSelected={selected == 'state'} onClick={() => handleClick("state")}>{EXAMPLES.state.title}</TabButton>     
             </div>
-           
-            <TabExample/>
+           {
+            !selected && <p className="text-slate-200 p-3">Selecciona un ejemplo para ver el código</p>
+           }
+           {
+            !!selected && 
+            <TabExample objeto={EXAMPLES[selected]}/>
+           }
+            
         </section>
 
 
