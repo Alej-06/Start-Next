@@ -13,8 +13,7 @@ export default function Dropdown({menuText}:{menuText: string}) {
     const [isOpen, setIsOpen]= useState(false);
     function handleBlur(){
         //Espera unos 150 ms
-        setTimeout(() =>console.log("Pausa"),200)
-        setIsOpen(false)
+        setTimeout(() =>setIsOpen(false),200)
     }
   return (
     <div className='mx-auto md:mx-28 relative flex flex-col items-center w-[340px] bg-purple-700'>
